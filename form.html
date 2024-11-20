@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css\style.css">
+   <link rel="icon" href="images\favicon.png" type="image/x-icon">
+   <script src="js/main.js"></script>
+   <title>Створення замовлення</title>
+</head>
+
+<body>
+
+   <!-- FORM -->
+    
+   <div class="mainForm">
+      <form id="" action="catalog1Page.html" target="_self" onsubmit="alert('Дякуємо за замовлення! Очікуйте відправлення')" class="form">
+         <div class="orderInfo"><strong>Інформація про замовлення</strong></div>
+         <div class="quantityInfo">
+            <label for="quantity" class="quantity">Кількість штук:</label>
+            <input type="number" name="quantity" id="quantity" class="quantityInput" min="1" max="" placeholder="1" required><br>
+         </div>
+   
+         <fieldset class="fieldset">
+            <div class="data"><strong>Дані отримувача для відправлення</strong></div>
+            <div class="dataItem">
+               <label for="userInfo">Ім'я отримувача:</label><br>
+               <input type="text" name="userInfo" id="Name" placeholder="Андрій" required><br>
+            </div>
+            <div class="dataItem">
+               <label for="address">Адреса доставки:</label><br>
+               <input type="text" name="address" id="address" placeholder="Місто, вулиця, номер будинку" required><br>
+            </div>
+            <div class="dataItem">
+               <label for="postalIndex">Поштовий індекс:</label><br>
+               <input type="text" name="postalIndex" id="postalIndex" placeholder="00000" pattern="[0-9]{5}" title="Повинно бути п'ять цифр" required><br>
+            </div>
+            <div class="dataItemLast">
+               <label for="mobileNumber">Номер мобільного телефону:</label><br>
+               <input type="tel" name="mobileNumber" id="mobileNumber" placeholder="012-345-67-89" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required><br>
+            </div>
+         </fieldset>
+         <input type="submit" class="submitButton" value="Підтвердити замовлення">
+      </form>
+   </div>
+
+</body>
+</html>
